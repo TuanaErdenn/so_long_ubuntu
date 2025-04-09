@@ -6,7 +6,7 @@
 /*   By: terden <terden@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 13:20:21 by terden            #+#    #+#             */
-/*   Updated: 2025/04/08 21:12:41 by terden           ###   ########.fr       */
+/*   Updated: 2025/04/08 21:31:50 by terden           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	maxmapcontrol(t_game *g)
 	map_height = g->column * TILE_SIZE;
 	if (map_width > g->screen_w || map_height > g->screen_h)
 	{
-		write(1, "The map is too big for the screen.\n", 36);
+		write(1, "Error.\nThe map is too big for the screen.\n", 43);
 		close_game(g);
 	}
 }
